@@ -1,7 +1,6 @@
-# Tauri + React + Typescript
+# Anduin
 
-This template should help get you started developing with Tauri, React and Typescript in Vite.
+The naming from Hero of the Storm. He's the Lord of Storm City.
 
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+His characteristic is the ability to assist thief is strong, and then the overhand uncomfortable is not high.
+It is also expected that this project will help developers work quickly and efficiently
