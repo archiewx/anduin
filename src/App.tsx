@@ -1,12 +1,18 @@
-import { Button } from 'antd';
-import * as styled from './styled';
-import './App.css';
+import { Layout } from 'antd';
+
+const { Header, Sider, Content, Footer } = Layout;
 
 function App() {
   return (
     <>
-      <Button>Hello World</Button>
-      <styled.Box>Hello World</styled.Box>
+      <Layout>
+        <Header>Header</Header>
+        <Layout>
+          <Sider>Sider</Sider>
+          <Content>Content</Content>
+        </Layout>
+        <Footer>Footer</Footer>
+      </Layout>
     </>
   );
 }
