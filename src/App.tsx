@@ -1,19 +1,22 @@
-import { Layout } from 'antd';
-
-const { Header, Sider, Content, Footer } = Layout;
+import { Layout, Switch } from 'antd';
+import { HashRouter as Router, Route } from 'react-router-dom';
+import { AppLayout } from './styled';
+import { AppSider } from './layout/AppAsider';
+import { AppContent } from './layout/AppContent';
 
 function App() {
   return (
     <>
-      {/* <Layout>
-        <Header>Header</Header>
-        <Layout>
-          <Sider>Sider</Sider>
-          <Content>Content</Content>
-        </Layout>
-        <Footer>Footer</Footer>
-      </Layout> */}
-      <div>Hello World</div>
+      <Router>
+        <AppLayout>
+          {/*<AppHeader>Header</AppHeader>*/}
+          <Layout>
+            <AppSider />
+            <AppContent />
+          </Layout>
+          {/*<AppFooter>Footer</AppFooter>*/}
+        </AppLayout>
+      </Router>
     </>
   );
 }

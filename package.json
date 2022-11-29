@@ -10,16 +10,19 @@
     "tauri": "tauri"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.8.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@tauri-apps/api": "^1.1.0",
     "antd": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.3",
     "systemjs": "^6.13.0",
     "zustand": "^4.1.4"
   },
   "devDependencies": {
+    "@babel/core": "^7.20.5",
     "@tauri-apps/cli": "^1.1.0",
     "@types/node": "^18.7.10",
     "@types/react": "^18.0.15",

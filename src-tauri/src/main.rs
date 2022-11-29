@@ -5,7 +5,7 @@ windows_subsystem = "windows"
 
 use std::error::Error;
 
-use tauri::{App, Wry};
+use tauri::{App, Manager, Wry};
 
 mod menu;
 mod cmd;
@@ -23,7 +23,7 @@ fn main() {
     .expect("error while running tauri application");
 }
 
-fn set_app(_app: &mut App<Wry>) -> Result<(), Box<dyn Error>> {
-  // let win = app.get_window("main").unwrap();
+fn set_app(app: &mut App<Wry>) -> Result<(), Box<dyn Error>> {
+  let _win = app.get_window("main").unwrap();
   return Ok(());
 }
