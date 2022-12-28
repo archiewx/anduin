@@ -19,6 +19,7 @@ fn main() {
     .menu(menu::setup_menu())
     .on_menu_event(menu::setup_menu_event)
     .invoke_handler(tauri::generate_handler![cmd::invoke])
+    .invoke_handler(tauri::generate_handler!(cmd::read_hosts))
     .run(tauri::generate_context!())
     .expect("error while running tauri application");
 }

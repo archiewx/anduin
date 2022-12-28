@@ -1,11 +1,11 @@
 use tauri::{CustomMenuItem, Manager, Menu, Submenu, WindowMenuEvent, Wry};
 
 pub fn setup_menu() -> Menu {
-  let dev_menu = CustomMenuItem::new("devtools", "DevTools");
+  // let dev_menu = CustomMenuItem::new("devtools", "DevTools");
 
-  let sub_menu = Submenu::new("Develop", Menu::new().add_item(dev_menu));
+  // let sub_menu = Submenu::new("Develop", Menu::new().add_item(dev_menu));
 
-  let menu = Menu::os_default("macos").add_submenu(sub_menu);
+  let menu = Menu::os_default("macos");
 
   menu
 }

@@ -3,7 +3,13 @@ import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react({
+      babel: {
+        plugins: ['@emotion/babel-plugin'],
+      },
+    }),
+  ],
 
   // Vite options tailored for Tauri development and only applied in `tauri dev` or `tauri build`
   // prevent vite from obscuring rust errors
@@ -12,6 +18,13 @@ export default defineConfig({
   server: {
     port: 1420,
     strictPort: true,
+  },
+  resolve: {
+    alias: {
+      '@component': './src/component',
+      '@layout': './src/layout',
+      '@@': './src',
+    },
   },
   // to make use of `TAURI_DEBUG` and other env variables
   // https://tauri.studio/v1/api/config#buildconfig.beforedevcommand
